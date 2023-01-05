@@ -4,7 +4,7 @@
   "description": "Demo application for AWS EC2 Auto Scaling and Application Load balancers",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/server.js serve --open",
+    "start": "node server/server.js serve --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jo Huang",

@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 // get IP address route
 app.get('/ipaddress', (req, res, next) => {
     try {
-        const ip = fs.readFileSync(path.join(__dirname,'../test.txt'), 'utf8');
+        const ip = fs.readFileSync(path.join(__dirname,'../ip.txt'), 'utf8');
         res.locals.ip = ip;
     } catch (err) {
         console.log(err);
